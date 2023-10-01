@@ -1,14 +1,4 @@
-# Self-Taught Data Engineer Journey
-
-Welcome to my self-taught data engineering journey! This repository documents my progress and learning experiences in the field of data engineering.
-
-## Goals
-
-- Gain proficiency in data warehousing, ETL processes, and database management.
-- Learn big data technologies and cloud platforms for scalable data processing.
-- Build a strong portfolio of data engineering projects.
-
-## Study Plan
+## Progress Log
 
 ### Week 1: Data Warehousing (Days 1-7)
 - [ ] Day 1: Research data warehousing concepts and architectures.
@@ -34,15 +24,3 @@ Welcome to my self-taught data engineering journey! This repository documents my
 - [ ] Day 29: Research major cloud providers (AWS, Azure, Google Cloud).
 - [ ] Day 30-32: Learn about cloud storage services (e.g., AWS S3, Google Cloud Storage).
 - [ ] Day 33-35: Understand serverless computing concepts and tools.
-
-## Timeline
-
-- **Day 1-7:** Data Warehousing
-- **Day 8-14:** ETL Frameworks
-- **Day 15-21:** Databases
-- **Day 22-28:** Big Data Technologies
-- **Day 29-35:** Cloud Platforms
-
-Feel free to follow my progress and contribute to this repository. I'm excited to share my journey and learn from the data engineering community!
-
-Happy learning! 🚀
