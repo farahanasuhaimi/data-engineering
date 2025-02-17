@@ -38,13 +38,23 @@ Develop a modern data warehouse using SQL Server to consolidate sales data, enab
  - Example: ```erp_sales```, ```crm_customers```
 
 **Gold Layer Rules**
-- All names must be meaningful, business-aligned names for tables, starting with the category prefix 
- | Pattern | Description | Example |
- | --- | --- | --- |
- | dim_ | Dimension Tables | dim_customers |
- |   fact_ | Fact Tables | fact_sales |
- |  agg_ | Aggregated Tables | agg_sales_monthly |
-
-- ```<category>_<table_name>```
-- Example: ```dim_customers```, ```fact_sales```
+- All names must be meaningful, business-aligned names for tables, starting with the category prefix:
   
+ | Category | Description | Example |
+ | ------- | ----------- | -------- |
+ | dim_ | Dimension table | dim_customers |
+ | fact_ | Fact table | fact_sales |
+ | agg_ | Aggregated table | agg_sales_monthly |
+
+**Surrogate Keys**
+- All primary keys in dimension tables must use suffix ```_key```
+- Example: ```customer_key``` in ```dim_customers``` table
+
+**Technical Columns**
+- All technical columns must use prefix ```dwh_``` followed by descriptive meaning
+- ```dwh_<column_name>``` - exclusive for system-generated metadata
+- Example: ```dwh_load_at``` -> System-generated column used to store the date when the record was loaded
+
+**Stored Procedure**
+- All stored procedures must use prefix ```load_<layer>```
+- Example: ```load_bronze``` -> Stored procedure to load data into bronze layer
