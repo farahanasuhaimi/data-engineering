@@ -24,12 +24,26 @@ Develop a modern data warehouse using SQL Server to consolidate sales data, enab
   
 ### Design Data Architecture
 - Data Warehouse -> Medallion Architecture
-/images/medallion-architecture.png
 
 ![Block Diagram: Data Architecture](images/data-architecture.svg)
 
 ### Project Initialization
 - Naming Conventions - using snake_case (lowercase with underscores between words)
 - Language - English, and avoid using SQL reserved words
-  
+
+ #### Table Naming Conventions
+ **Bronze & Silver Layer Rules**
+ - All names must start with source system name and original table names (no renaming of tables)
+ - ```<source_system>_<table_name>```
+ - Example: ```erp_sales```, ```crm_customers```
+
+**Gold Layer Rules**
+- All names must be meaningful, business-aligned names for tables, starting with the category prefix 
+  Pattern | Description | Example
+  dim_ | Dimension Tables | dim_customers
+    fact_ | Fact Tables | fact_sales
+    agg_ | Aggregated Tables | agg_sales_monthly
+    
+- ```<category>_<table_name>```
+- Example: ```dim_customers```, ```fact_sales```
   
