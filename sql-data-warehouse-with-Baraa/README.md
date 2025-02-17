@@ -9,3 +9,5 @@ SQL Data Warehouse from Scratch | Full Hands-On Data Engineering Project
 ### Data Architecture
 - Data Warehouse -> Medallion Architecture
 /images/medallion-architecture.png
+
+![Block Diagram: Data Architecture](images/data-architecture.svg)
