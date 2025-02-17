@@ -30,7 +30,7 @@ Welcome to my self-taught data engineering journey! This repository documents my
 - [ ] Study Apache Spark for large-scale data processing.
 - [ ] Explore stream processing with Apache Kafka.
 
-### Week 5: Cloud Platforms
+### Cloud Platforms
 - [x] Research major cloud providers (AWS, Azure, Google Cloud).
 - [ ] Learn about cloud storage services (e.g., AWS S3, Google Cloud Storage).
 - [ ] Understand serverless computing concepts and tools.
