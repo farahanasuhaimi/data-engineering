@@ -39,11 +39,12 @@ Develop a modern data warehouse using SQL Server to consolidate sales data, enab
 
 **Gold Layer Rules**
 - All names must be meaningful, business-aligned names for tables, starting with the category prefix 
-  Pattern | Description | Example
-  dim_ | Dimension Tables | dim_customers
-    fact_ | Fact Tables | fact_sales
-    agg_ | Aggregated Tables | agg_sales_monthly
-    
+ | Pattern | Description | Example |
+ | --- | --- | --- |
+ | dim_ | Dimension Tables | dim_customers |
+ |   fact_ | Fact Tables | fact_sales |
+ |  agg_ | Aggregated Tables | agg_sales_monthly |
+
 - ```<category>_<table_name>```
 - Example: ```dim_customers```, ```fact_sales```
   
