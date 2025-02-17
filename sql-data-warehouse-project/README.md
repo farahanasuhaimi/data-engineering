@@ -53,7 +53,7 @@ Develop a modern data warehouse using SQL Server to consolidate sales data, enab
 **Technical Columns**
 - All technical columns must use prefix ```dwh_``` followed by descriptive meaning
 - ```dwh_<column_name>``` - exclusive for system-generated metadata
-- Example: ```dwh_load_at``` -> System-generated column used to store the date when the record was loaded
+- Example: ```dwh_load_date``` -> System-generated column used to store the date when the record was loaded
 
 **Stored Procedure**
 - All stored procedures must use prefix ```load_<layer>```

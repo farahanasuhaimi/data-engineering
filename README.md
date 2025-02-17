@@ -36,7 +36,7 @@ Welcome to my self-taught data engineering journey! This repository documents my
 - [ ] Understand serverless computing concepts and tools.
 
 ## Project 
-- [ ] Develop a modern data warehouse using SQL Server to consolidate sales data, enabling analytics and reporting. [Link](/sql-data-warehouse-with-Baraa/README.md)
+- [ ] Develop a modern data warehouse using SQL Server to consolidate sales data, enabling analytics and reporting. [Link](/sql-data-warehouse-project/README.md)
 
 
 Happy learning! 🚀
