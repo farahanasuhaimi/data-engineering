@@ -39,7 +39,7 @@ Develop a modern data warehouse using SQL Server to consolidate sales data, enab
 
 **Gold Layer Rules**
 - All names must be meaningful, business-aligned names for tables, starting with the category prefix:
-  
+
  | Category | Description | Example |
  | ------- | ----------- | -------- |
  | dim_ | Dimension table | dim_customers |
@@ -58,3 +58,8 @@ Develop a modern data warehouse using SQL Server to consolidate sales data, enab
 **Stored Procedure**
 - All stored procedures must use prefix ```load_<layer>```
 - Example: ```load_bronze``` -> Stored procedure to load data into bronze layer
+
+### Build Bronze Layer
+Step 1: Gather and Analyze the data sources by interviewing the Source System Expert (i.e. domain expert, product owner).
+  - Understand the data structure, data quality, and data relationships
+Step 2: Coding and testing the script for data ingestion (into the [database](scripts/0.1-init_database.sql) )
