@@ -65,14 +65,21 @@ Step 1: Gather and Analyze the data sources by interviewing the Source System Ex
   - Understand architecture and technology stack
   - How to extract and load (size, scope, limitations & authentication)
   - Understand the data structure, data quality, and data relationships
-  - 
-Step 2: Coding and testing the script for data ingestion 
-    - Create a database [code](scripts/0.1-init_database.sql)
-    - Create tables for each source system [code](scripts/1.0-init_bronze.sql)
-    - Bulk import data from CSV files 
-    ![Bulk import data](images/bronze01.png)
-    - Truncate and Insert, to clear the table before adding any new record (row) [code](scripts/1.1-load_bronze.sql)
   
+Step 2: Coding and testing the script for data ingestion 
+  - Create a database [code](scripts/0.1-init_database.sql)
+  - Create tables for each source system [code](scripts/1.0-init_bronze.sql)
+  - Bulk import data from CSV files 
+  ![Bulk import data](images/bronze01.png)
+    
+  - Truncate and Insert, to clear the table before adding any new record (row) [code](scripts/1.1-trunc_bulk_bronze.sql)
+  - Validate the data with SELECT * and SELECT COUNT(*)
+  
+STEP 2.1: Prepare the data ingestion code as stored procedure
+  - Create a stored procedure to load data into bronze layer [code](scripts/1.2-load_bronze_sp.sql)
+  - Execute the stored procedure to load data into bronze layer
+
+STEP  2.2: Prepare the data ingestion with Error Handling and Monitoring [code](scripts/1.3-load_bronze_sp_check.sql)
 
 Step 3: Validation for data completeness & schema checks
 Step 4: Documentation and versioning of the process
