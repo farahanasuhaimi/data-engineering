@@ -4,6 +4,7 @@ Load Bronze Layer with Error Handling and Monitoring
 =====================
 
 This scripts creates a stored procedure with checking of start and end time, error handling, and print statements.
+This script is identical to the previous script (1.2-load_bronze_sp.sql).
 */
 CREATE OR ALTER PROCEDURE bronze.load_bronze AS
 BEGIN 

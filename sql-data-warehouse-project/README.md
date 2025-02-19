@@ -83,3 +83,9 @@ STEP  2.2: Prepare the data ingestion with Error Handling and Monitoring [code](
 
 Step 3: Validation for data completeness & schema checks
 Step 4: Documentation and versioning of the process
+
+### Build Silver Layer
+Step 1: Analyzing: Explore & Understand the Data
+
+Step 2: Coding for Data Cleansing
+- Check Quality of Bronze Layer
