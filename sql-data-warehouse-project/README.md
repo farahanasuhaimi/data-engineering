@@ -65,11 +65,14 @@ Step 1: Gather and Analyze the data sources by interviewing the Source System Ex
   - Understand architecture and technology stack
   - How to extract and load (size, scope, limitations & authentication)
   - Understand the data structure, data quality, and data relationships
+  - 
 Step 2: Coding and testing the script for data ingestion 
     - Create a database [code](scripts/0.1-init_database.sql)
     - Create tables for each source system [code](scripts/1.0-init_bronze.sql)
-    - Bulk import data from CSV files [code](scripts/1.1-load_bronze.sql)
+    - Bulk import data from CSV files 
     ![Bulk import data](images/bronze01.png)
-    - Load data from CSV files into tables
+    - Truncate and Insert, to clear the table before adding any new record (row) [code](scripts/1.1-load_bronze.sql)
+  
+
 Step 3: Validation for data completeness & schema checks
 Step 4: Documentation and versioning of the process

@@ -53,9 +53,9 @@ bdate DATE,
 gen NVARCHAR(50)
 )
 
-IF OBJECT_ID('bronze.erp_loc_A101') IS NOT NULL
-    DROP TABLE bronze.erp_loc_A101;
-CREATE TABLE bronze.erp_loc_A101 (
+IF OBJECT_ID('bronze.erp_loc_a101') IS NOT NULL
+    DROP TABLE bronze.erp_loc_a101;
+CREATE TABLE bronze.erp_loc_a101 (
 cid NVARCHAR(50),
 cntry NVARCHAR(50)
 )
