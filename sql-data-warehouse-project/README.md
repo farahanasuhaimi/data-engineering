@@ -60,6 +60,15 @@ Develop a modern data warehouse using SQL Server to consolidate sales data, enab
 - Example: ```load_bronze``` -> Stored procedure to load data into bronze layer
 
 ### Build Bronze Layer
-Step 1: Gather and Analyze the data sources by interviewing the Source System Expert (i.e. domain expert, product owner).
+Step 1: Gather and Analyze the data sources by interviewing the Source System Expert (i.e. domain expert, product owner). [checklist](bonus/checklist.md)
+  - Get the business context and ownership of the data
+  - Understand architecture and technology stack
+  - How to extract and load (size, scope, limitations & authentication)
   - Understand the data structure, data quality, and data relationships
-Step 2: Coding and testing the script for data ingestion (into the [database](scripts/0.1-init_database.sql) )
+Step 2: Coding and testing the script for data ingestion 
+    - Create a database [code](scripts/0.1-init_database.sql)
+    - Create schema for bronze layer
+    - Create tables for each source system
+    - Load data from CSV files into tables
+Step 3: Validation for data completeness & schema checks
+Step 4: Documentation and versioning of the process
