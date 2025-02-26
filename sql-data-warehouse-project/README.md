@@ -89,3 +89,4 @@ Step 1: Analyzing: Explore & Understand the Data
 
 Step 2: Coding for Data Cleansing
 - Check Quality of Bronze Layer
+![Block Diagram: Bronze Layer Data Flow](images/data-flow.svg)
