@@ -82,6 +82,7 @@ STEP 2.1: Prepare the data ingestion code as stored procedure
 STEP  2.2: Prepare the data ingestion with Error Handling and Monitoring [code](scripts/1.3-load_bronze_sp_check.sql)
 
 Step 3: Validation for data completeness & schema checks
+
 Step 4: Documentation and versioning of the process
 ![Block Diagram: Bronze Layer Data Flow](images/data-flow.svg)
 
@@ -89,10 +90,13 @@ Step 4: Documentation and versioning of the process
 Step 1: Analyzing: Explore & Understand the Data
 ![Block Diagram: Understanding the data Relation](images/bronze_layer.svg)
 
+Step 1.5: Include metadata columns for additoinal information
+
 Step 2: Coding for Data Cleansing
 - Check Quality of Bronze Layer
 - Write Data Tranformations 
 - Insert into Silver Layer
 
 Step 3: Validation for data correctness checks
+
 Step 4: Documentation and versioning of the process
